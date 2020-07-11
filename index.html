@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cars for sale. Great discounts">
+  <meta name="keywords" content="cars slae cheap good-quality">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <title>Danny Cars For Sale</title>
+
+  <style>
+    body{
+      width: 100%;
+      background-image: linear-gradient(to bottom left, #33ccff 0%, #67ff0f);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+
+    th{
+      font-weight: 600; 
+    }
+
+    th, tr, td{
+      border-collapse: colapse;
+      border: 1px solid black;
+    }
+
+    #sort-by-brand{
+      max-width: 30%;
+    }
+
+
+
+    </style>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <h1 style="padding: 10px; margin-top: 17px;"> Danny Cars For Sale </h1>
+      <div class="row">
+         <!-- IMAGE  -->
+        <div class="col-sm-6" style="padding:20px">                   
+          <div class="thumbnail">
+            <img class="img-responsive img-thumbnail" src="Danny-car-sale-760x429.jpg" alt="Danny cars for sale">
+          </div>  
+        </div>
+        <div class="col-sm-6" style="padding:20px">
+          <div class="container">
+            <!-- SUBMIT FORM -->
+            <form id="form-input" class="form" action="submit">
+              <div class="row col">
+                <h3 style="margin-bottom:20px">Add car to sale list</h3>
+              </div>
+              <div class="form-group row">
+                <div class="col">                    
+                  <label class="control-label" for="brand">Brand</label>                  
+                </div> 
+                <div class="col"> 
+                  <input class="form-control" type="text" name="brand" id="brand">              
+                </div> 
+              </div>
+              <div class="form-group row">
+                <div class="col">                    
+                  <label class="control-label" for="model">Model</label>                  
+                </div> 
+                <div class="col"> 
+                  <input class="form-control" type="text" name="model" id="model">              
+                </div> 
+              </div>
+              <div class="form-group row">
+                <div class="col">                    
+                  <label class="control-label" for="year">Year</label>                  
+                </div> 
+                <div class="col"> 
+                  <input class="form-control" type="text" name="year" id="year">              
+                </div> 
+              </div>
+              <div class="form-group row">
+                <div class="col">                    
+                  <label class="control-label" for="price">Price</label>                  
+                </div> 
+                <div class="col"> 
+                  <input class="form-control" type="text" name="base-price" id="base-price">              
+                </div> 
+              </div>
+              <div class="form-group row">
+                <div class="col">
+                  <button class="btn btn-primary" type="submit" name="submit" id="submit">Submit</button>
+                </div>
+              </div> 
+            </form>
+          </div>              
+        </div>                 
+      </div>   
+    </div>
+    <!-- TABLE -->
+  <div class="container">
+    <div class="col">
+      <h2 style="padding:10px">Dannys List <small>car list</small></h2> 
+      <div class="row">  
+        
+        <table class="table table-responsive table-hover table-striped" id = "table">
+          <div class="input-group mb-2 ">
+            <input id="sort-by-brand" type="text" class="form-control" placeholder="search a car"  onfocus="this.placeholder = ''"onblur="this.placeholder = 'search car brand'" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+          </div>
+          <thead> 
+            <tr class = "table-danger">
+              <th>Brand </th>
+              <th>Model</th>
+              <th>Year</th>
+              <th>Price in ₪</th>
+              <th>Discount price in ₪</th>
+              <th>Click to delete</th>
+            </tr>
+          </thead> 
+          <tbody id = "tbody">
+          </tbody>
+        </table>
+        <input id="#kill-btn" class="btn btn-danger" type="button" value="Delete All Cars!">
+      </div>
+    </div>
+  </div>
+
+
+  </main>
+
+  
+  <footer class="page-footer font-small blue">
+    <br><br>
+    <div class="footer-copyright text-center py-3 blue">© 2020 Copyright:
+      <a href="https://en.wikipedia.org/wiki/Danny_DeVito"> Danny_DeVito.com</a>
+    </div>
+    <br>
+
+  </footer>
+  
+  
+  <script src="script.js"></script> 
+
+</body>
+</html>
+
